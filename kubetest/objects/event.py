@@ -10,7 +10,7 @@ log = logging.getLogger("kubetest")
 class Event:
     """Kubetest wrapper around a Kubernetes `Event`_ API Object.
 
-    The actual ``kubernetes.client.V1Event`` instance that this
+    The actual ``kubernetes.client.EventsV1Event`` instance that this
     wraps can be accessed via the ``obj`` instance member.
 
     This wrapper does **NOT** subclass the ``objects.ApiObject`` like
@@ -22,7 +22,7 @@ class Event:
         https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.18/#event-v1-core
     """
 
-    obj_type = client.V1Event
+    obj_type = client.EventsV1Event
 
     api_clients = {
         "preferred": client.CoreV1Api,
