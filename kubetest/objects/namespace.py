@@ -25,8 +25,8 @@ class Namespace(ApiObject):
     obj_type = client.V1Namespace
 
     api_clients = {
-        "preferred": client.NetworkingV1Api,
-        "v1": client.NetworkingV1Api,
+        "preferred": client.CoreV1Api,
+        "v1": client.CoreV1Api,
     }
 
     @classmethod

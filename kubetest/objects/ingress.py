@@ -27,8 +27,8 @@ class Ingress(ApiObject):
     obj_type = client.ExtensionsV1beta1Api
 
     api_clients = {
-        "preferred": client.ExtensionsV1beta1Api,
-        "extensions/v1beta1": client.ExtensionsV1beta1Api,
+        "preferred": client.NetworkingV1Api,
+        "extensions/v1beta1": client.NetworkingV1Api,
     }
 
     def __str__(self):
