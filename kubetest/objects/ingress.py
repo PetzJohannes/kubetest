@@ -28,7 +28,7 @@ class Ingress(ApiObject):
 
     api_clients = {
         "preferred": client.NetworkingV1Api,
-        "extensions/v1beta1": client.NetworkingV1Api,
+        "networking.k8s.io/v1": client.NetworkingV1Api,
     }
 
     def __str__(self):
