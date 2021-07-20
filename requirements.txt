@@ -24,7 +24,7 @@ importlib-metadata==3.7.3
     #   pytest
 iniconfig==1.1.1
     # via pytest
-kubernetes==12.0.1
+git+https://github.com/PetzJohannes/python.git@release-19.0
     # via kubetest (setup.py)
 oauthlib==3.1.0
     # via requests-oauthlib
